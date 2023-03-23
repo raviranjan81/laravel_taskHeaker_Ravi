@@ -1,0 +1,176 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;padding: 0; box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid;
+    background-color: rgb(55, 14, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .user{
+    max-width: 500px;
+    width: 400px;
+    height: 350px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 10px;
+    border: 1px solid rgba(231, 230, 230, 0.863);
+    padding: 5px;
+    position: relative;
+}
+
+.user h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 4px rgba(51, 49, 49, 0.37);
+    color: rgb(43, 20, 126);
+}
+.user .line{
+    border: 1px solid rebeccapurple;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.user .input-field{
+    width: 100%;
+    height: 55%;
+    top: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-field .field{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.name{
+    position: relative;
+    margin: 5px;
+}
+.name input[type="text"]{
+    min-width: 350px;
+    height: 38px;
+    outline: none;
+    border: none;
+    border: 1px solid rgba(32, 45, 223, 0.788);
+    border-radius: 6px;
+    box-shadow: 0 0px 2px rgba( 31, 38, 135, 0.37 );
+    padding: 0 10px;
+    color: black;
+}
+::placeholder{
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+.btn-field{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.btnBack,input[type="submit"]{
+    cursor: pointer;
+    background-color: blueviolet;
+    border: 1px solid rgba(218, 215, 215, 0.623);
+    width: 100px;
+    height: 30px;
+    margin-left: 15px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border-radius: 6px;
+    box-shadow: 0 0px 2px rgba(79, 31, 135, 0.37);
+    color: aliceblue;
+}
+.btn-field a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.btnBack{
+    margin-right: 13px;
+    background-color: rgb(50, 17, 199);
+}
+/* css of parsley js */
+
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+  color: #468847;
+  background-color: #DFF0D8;
+  border: 1px solid #D6E9C6;
+}
+.parsley-success{
+  border-color: #24b343;
+}
+
+.parsley-error:focus{
+  border-color: #B94A48;
+  border-width: 2px;
+}
+
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border: 1px solid #EED3D7;
+}
+
+.parsley-errors-list {
+  margin: 2px 0 3px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  opacity: 0;
+  color: #B94A48;
+
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
+}
+
+/*validate backend css */
+
+.name span{
+    color: red;
+}
+.tas{
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: rgba(51, 49, 49, 0.616);
+}
+.userTask{
+    outline: none;
+    border: 1px solid rgba(218, 215, 215, 0.623);
+   
+}
